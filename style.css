@@ -494,3 +494,70 @@ footer {
             inset 0 0 10px var(--neon-blue);
     }
 }
+/* --- DESIGN HUB KONTAK FUTURISTIK --- */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.contact-card-mini {
+    position: relative;
+    background: rgba(10, 20, 38, 0.7);
+    border: 1px solid #00f2fe;
+    padding: 20px 30px;
+    width: 250px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: left;
+}
+
+.contact-card-mini::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #00f2fe;
+}
+
+.contact-tag {
+    font-size: 10px;
+    color: #00f2fe;
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.contact-content h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact-content p {
+    color: #8892b0;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* EFEK KETIKA DISENTUH KURSOR (HOVER) */
+.contact-card-mini:hover {
+    transform: translateY(-5px);
+    background: rgba(10, 20, 38, 0.9);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    border-color: #ffffff;
+}
+
+.contact-card-mini:hover .contact-tag {
+    color: #ffffff;
+}
